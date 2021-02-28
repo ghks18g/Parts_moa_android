@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NaverMapActivityForRepairShop">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.naver.maps.map.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/btn_search_repairshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btn_back_to"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:onClick="repairShop_around"
+        android:background="@drawable/round_btn_shape"
+        android:src="@mipmap/search_repairshop_btn" />
+
+    <ImageButton
+        android:id="@+id/btn_back_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onClickBack"
+        android:background="@drawable/round_btn_shape"
+        android:src="@mipmap/ic_back_icon" />
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/map">-->
+<!--        <Button-->
+<!--            android:id="@+id/btn_around_repairShop"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="repairShop_around"-->
+<!--            android:text="1Km이내 정비업체"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.066"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/map" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="onClickBack"-->
+<!--            android:text="돌아가기"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/btn_around_repairShop"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/map" />-->
+
+
+<!--    </LinearLayout>-->
+
+</RelativeLayout>

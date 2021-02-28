@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ramotion.foldingcell.FoldingCell xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/folding_cell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    folding-cell:additionalFlipsCount="2"
+    folding-cell:animationDuration="1300">
+
+    <include layout="@layout/cell_content_layout"/>
+
+    <include layout="@layout/cell_title_layout" />
+
+<!--    <include layout="@layout/cell_content_layout" />-->
+<!--    <include layout="@layout/cell_title_layout" />-->
+
+
+<!--        <FrameLayout-->
+<!--        android:id="@+id/cell_content_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:background="@color/bgBackSideColor"-->
+<!--        android:visibility="gone">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linearLayout_contents"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <ImageView-->
+<!--                        android:id="@+id/partsThumbnail_contents"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="100dp"-->
+<!--                        android:layout_margin="2dp"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                    />-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/partsTitle_contents"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textAlignment="center"-->
+<!--                        />-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/partsPrice_contents"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textAlignment="center"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <Button-->
+<!--                        android:id="@+id/goShop"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="자세히 보기" />-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/like_item"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:src="@android:drawable/star_off"/>-->
+<!--                </LinearLayout>-->
+<!--&lt;!&ndash;            <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/goShop"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="자세히 보기" />&ndash;&gt;-->
+<!--        </LinearLayout>-->
+<!--    </FrameLayout>-->
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/cell_title_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linearLayout_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:background="@color/bgTitleLeft"-->
+<!--            android:orientation="horizontal">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/partsThumbnail"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:scaleType="fitXY"-->
+<!--                />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@color/bgBackSideColor"-->
+<!--                android:orientation="vertical">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/partsTitle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/partsPrice"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </FrameLayout>-->
+</com.ramotion.foldingcell.FoldingCell>

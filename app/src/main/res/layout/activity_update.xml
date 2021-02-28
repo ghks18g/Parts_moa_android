@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 정보 수정"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="148dp"
+        android:ems="3"
+        android:hint="이름"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/user_profile"
+        app:layout_constraintTop_toTopOf="@+id/user_profile" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="3"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        app:layout_constraintStart_toEndOf="@+id/email"
+        app:layout_constraintTop_toTopOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/carinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:ems="5"
+        android:text="소유차량 정보"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toTopOf="@+id/user_car" />
+
+    <TextView
+        android:id="@+id/user_carinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="@+id/carinfo"
+        app:layout_constraintTop_toBottomOf="@+id/carinfo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:onClick="btn_ResetCarInfo"
+        android:text="소유차량 정보 변경"
+        app:layout_constraintStart_toStartOf="@+id/carinfo"
+        app:layout_constraintTop_toBottomOf="@+id/carinfo" />
+
+    <ImageView
+        android:id="@+id/user_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="64dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/user_car"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="36dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="@+id/user_profile"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile" />
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:onClick="btn_backClicked"
+        android:text="돌아가기"
+        app:layout_constraintEnd_toEndOf="@+id/user_car"
+        app:layout_constraintTop_toTopOf="@+id/btn_Update" />
+
+    <Button
+        android:id="@+id/btn_Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:onClick="btn_UpdateClicked"
+        android:text="수정하기"
+        app:layout_constraintStart_toStartOf="@+id/user_carinfo"
+        app:layout_constraintTop_toBottomOf="@+id/user_car" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

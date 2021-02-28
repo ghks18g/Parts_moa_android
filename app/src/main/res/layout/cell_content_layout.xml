@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/cell_content_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgBackSideColor"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_contents"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@drawable/cell_layout_edge"
+                android:gravity="center"
+                android:orientation="vertical">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+                    <ImageView
+                        android:id="@+id/partsThumbnail_contents"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="2dp"
+                        android:scaleType="fitXY"
+                    />
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+                        <TextView
+                            android:id="@+id/partsTitle_contents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_layout_edge"
+                            android:layout_margin="1dp"
+                            android:textAlignment="center"
+                        />
+                        <TextView
+                            android:id="@+id/partsPrice_contents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_layout_edge"
+                            android:layout_margin="1dp"
+                            android:textAlignment="center"/>
+<!--                    </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/goShop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="자세히 보기" />
+
+                    <ImageButton
+                        android:id="@+id/like_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@android:drawable/star_off"/>
+                </LinearLayout>
+
+                </LinearLayout>
+
+<!--        </LinearLayout>-->
+    </FrameLayout>
